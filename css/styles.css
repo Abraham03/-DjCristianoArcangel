@@ -11779,10 +11779,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 #carouselExampleInterval .carousel-item img {  
+
   object-fit: scale-down;
   object-position: center;
   overflow: hidden;
-  height:80vh;
+  height:50vh;
 }
 
 .carousel-control-next-icon {
