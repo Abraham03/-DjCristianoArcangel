@@ -63,7 +63,7 @@ function whatsap() {
   const fechaCompleta = newFecha + " " + time;
 
   const url =
-    "https://wa.me/8643465168?text=" +
+    "https://wa.me/18643465168?text=" +
     "*Nombre :* " +
     nombre +
     "%0a" +
