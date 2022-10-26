@@ -11786,6 +11786,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   object-position: center;
   overflow: hidden;
   height:50vh;
+  background: black;
 }
 
 .carousel-control-next-icon {
