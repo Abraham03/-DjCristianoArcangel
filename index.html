@@ -1,353 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es" class="scroll-smooth">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Dj Cristiano Arcangel</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/ico.png" />
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- JavaScript Bundle with Popper -->
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Metaetiquetas para SEO -->
+    <title>DJ Cristiano Arcangel | Eventos, Bodas, XV Años</title>
+    <meta name="description" content="DJ profesional para todo tipo de eventos sociales. Especialista en Bodas, XV Años, Baby Showers y más. La mejor música y ambiente para tu fiesta.">
+    <meta name="keywords" content="DJ, Cristiano Arcangel, DJ para eventos, música para fiestas, bodas, XV años, eventos sociales, DJ en Mexico">
+    <meta name="author" content="DJ Cristiano Arcangel">
+    <link rel="canonical" href="https://djcristianoarcangel.com">
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top"><img src="assets/img/djCristiano.png" alt="..." /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars ms-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Galeria Imagenes</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                </ul>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="DJ Cristiano Arcangel | Animación para Eventos">
+    <meta property="og:description" content="La mejor música y ambiente para tus eventos. ¡Contrátame para hacer de tu fiesta algo inolvidable!">
+    <meta property="og:image" content="assets/img/DJ.jpg">
+    <meta property="og:url" content="https://djcristianoarcangel.com">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/ico.png">
+
+    <!-- Dependencias Externas -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Hoja de Estilos Personalizada -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <!-- ====== Header / Navegación ====== -->
+    <header id="header" class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <!-- Logo con tamaño de texto responsivo -->
+            <a href="#inicio" class="text-xl sm:text-2xl font-bold text-blue-500 tracking-wider">DJ Cristiano Arcangel</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#servicios" class="hover:text-blue-400 transition-colors duration-300">Servicios</a>
+                <a href="#portafolio" class="hover:text-blue-400 transition-colors duration-300">Portafolio</a>
+                <a href="#sobre-mi" class="hover:text-blue-400 transition-colors duration-300">Sobre Mí</a>
+                <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105">Contacto</a>
             </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-        <div class="container">
-            <div class="masthead-subheading">
-                Welcome To DJ Cristiano <b>ARCANGEL</b>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none"><i class="fas fa-bars text-2xl"></i></button>
             </div>
-            <div class="masthead-heading text-uppercase">Chávez Producción</div>
-            <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#servicios" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Servicios</a>
+            <a href="#portafolio" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Portafolio</a>
+            <a href="#sobre-mi" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Sobre Mí</a>
+            <a href="#contacto" class="block text-center py-3 px-4 text-sm bg-blue-600 hover:bg-blue-700">Contacto</a>
         </div>
     </header>
-    <!-- Services-->
-    <section class="page-section" id="services">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Servicios</h2>
-                <h3 class="section-subheading text-muted">
-                    Servicio de Dj 100% Cristiano con la mejor música.
-                </h3>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-solid fa-church fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Maestro de Ceremonias</h4>
-                    <p class="text-muted"></p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-solid fa-people-group fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Actividades</h4>
-                    <p class="text-muted">Juegos para niños, jovenes y adultos.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-solid fa-music fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="my-3">Karaoke</h4>
-                    <p class="text-muted"></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio Grid-->
-    <section class="page-section bg-light" id="portfolio">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Eventos</h2>
-                <h3 class="section-subheading text-muted">Tipos de Eventos.</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 1-->
-                    <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/portfolio/babyShower.png" alt="..." />
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Baby Shower</div>
-                            <div class="portfolio-caption-subheading text-muted"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 2-->
-                    <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/portfolio/boda.jpg" alt="..." />
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Bodas</div>
-                            <div class="portfolio-caption-subheading text-muted"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 3-->
-                    <div class="portfolio-item">
-                        <img class="img-fluid" src="assets/img/portfolio/15_anios.jpeg" alt="..." />
 
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Cumpleaños</div>
-                            <div class="portfolio-caption-subheading text-muted"></div>
-                        </div>
-                    </div>
-                </div>
+    <main>
+        <!-- ====== Sección de Inicio ====== -->
+        <section id="inicio" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/img/DJ.jpg');">
+            <div class="text-center px-4">
+                <!-- Títulos con tamaños de fuente responsivos para adaptarse a móviles y escritorio -->
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-widest mb-4">DJ Cristiano Arcangel</h1>
+                <p class="text-lg sm:text-xl md:text-2xl font-light text-gray-300 mb-8 max-w-3xl mx-auto">La música que transforma tu evento en una experiencia inolvidable.</p>
+                <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg transition-transform duration-300 ease-in-out transform hover:scale-105 shadow-lg">¡Cotiza tu evento!</a>
             </div>
-        </div>
-    </section>
-    <!-- About-->
-    <section class="page-section" id="about">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Imagenes</h2>
-            </div>
-            <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="4000">
-                        <img src="assets/img/about/1.jpg" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/2.jpg" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/3.jpg" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/4.jpg" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/5.jpg" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/6.jpg" class="d-block w-100" loading="lazy" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/7.jpg" class="d-block w-100" loading="lazy" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/8.jpg" class="d-block w-100" loading="lazy" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/9.jpg" class="d-block w-100" loading="lazy" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/10.jpg" class="d-block w-100" loading="lazy" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/11.jpg" class="d-block w-100" loading="lazy" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/12.jpg" class="d-block w-100" loading="lazy" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/13.jpg" class="d-block w-100" loading="lazy" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="4000">
-                        <img src="assets/img/about/14.jpg" class="d-block w-100" loading="lazy" alt="..." />
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="false"></span>
-                    <span class="visually-hidden-focusable">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
-    <!-- Team-->
-    <section class="page-section bg-light" id="team">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Dj Arcangel</h2>
-            </div>
-            <div class="row">
- 
-                <div class="col-lg-4">
-                </div>
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                        <h4>Ruben Chávez Pérez</h4>
-                        <p class="text-muted">Dj Oficial</p>
-                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/ruben.chavez.520" aria-label="Perfil Facebook"><i
-                                class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">
-                        Dj Arcangel esta enfocado especificamente en eventos cristianos.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Clients-->
-    <div class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg"
-                            alt="..." aria-label="Microsoft Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg"
-                            alt="..." aria-label="Google Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg"
-                            alt="..." aria-label="Facebook Logo" /></a>
-                </div>
-                <div class="col-md-3 col-sm-6 my-3">
-                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg"
-                            alt="..." aria-label="IBM Logo" /></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact-->
-    <section class="page-section" id="contact">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Contacto</h2>
-                <h3 class="section-subheading text-muted">
-                    Llenar el formulario para enviar los datos por WhatsApp.
-                </h3>
-            </div>
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- * * SB Forms Contact Form * *-->
-            <!-- * * * * * * * * * * * * * * *-->
-            <!-- This form is pre-integrated with SB Forms.-->
-            <!-- To make this form functional, sign up at-->
-            <!-- https://startbootstrap.com/solution/contact-forms-->
-            <!-- to get an API token!-->
-            <form id="contactForm">
-                <div class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <!-- Name input-->
-                            <input class="form-control" id="name" type="text" placeholder="Nombre *" />
-                            <div class="invalid-feedback">A name is required.</div>
-                        </div>
-                        <div class="form-group">
-                            <!-- Fecha input-->
-                            <input class="form-control" id="fecha" type="datetime-local" placeholder="Fecha*" />
-                        </div>
+        </section>
 
-                        <div class="form-group">
-                            <select name="evento" class="form-control" id="evento">
-                                <option value="">Seleccione Evento</option>
+        <!-- ====== Sección de Servicios ====== -->
+        <section id="servicios" class="py-16 sm:py-20 bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-2">Mis Servicios</h2>
+                <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Soluciones de audio e iluminación para todo tipo de evento social.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="text-blue-500 mb-4"><i class="fas fa-ring text-5xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Bodas</h3>
+                        <p class="text-gray-400">La banda sonora perfecta para el día más importante de tu vida.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="text-pink-500 mb-4"><i class="fas fa-birthday-cake text-5xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">XV Años</h3>
+                        <p class="text-gray-400">La mejor música y ambiente para una celebración espectacular.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="text-green-500 mb-4"><i class="fas fa-baby text-5xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Baby Showers</h3>
+                        <p class="text-gray-400">Música ambiental y divertida para la bienvenida del bebé.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="text-yellow-500 mb-4"><i class="fas fa-glass-cheers text-5xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Eventos Sociales</h3>
+                        <p class="text-gray-400">Cumpleaños, aniversarios, y cualquier motivo para celebrar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== Sección de Portafolio (Slideshow) ====== -->
+        <section id="portafolio" class="py-16 sm:py-20">
+            <div class="container mx-auto px-4 sm:px-6 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-2">Galería de Eventos</h2>
+                <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Momentos inolvidables capturados en acción.</p>
+                <div id="slideshow-container" class="max-w-4xl mx-auto relative">
+                    <a id="slideshow-prev" class="slideshow-nav-btn prev">&#10094;</a>
+                    <a id="slideshow-next" class="slideshow-nav-btn next">&#10095;</a>
+                </div>
+                <div id="thumbnail-container" class="flex justify-center flex-wrap gap-2 mt-4">
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== Sección Sobre Mí ====== -->
+        <section id="sobre-mi" class="py-16 sm:py-20 bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="md:w-1/3 flex-shrink-0">
+                        <img src="assets/img/djCristiano.png" alt="Retrato de DJ Cristiano Arcangel" class="rounded-full shadow-2xl w-64 h-64 sm:w-80 sm:h-80 object-cover mx-auto">
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Hola, soy DJ Cristiano Arcangel</h2>
+                        <p class="text-blue-400 text-lg sm:text-xl mb-4">DJ Profesional con más de 10 años de experiencia</p>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Mi pasión es la música y mi misión es hacer que cada evento sea único. Me especializo en leer al público para crear una atmósfera vibrante, adaptándome a los gustos de cada cliente. Desde la elegancia de una boda hasta la euforia de una fiesta de XV años, mi compromiso es superar tus expectativas.
+                        </p>
+                        <div class="flex justify-center md:justify-start space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-blue-500"><i class="fab fa-facebook-f text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-pink-500"><i class="fab fa-instagram text-2xl"></i></a>
+                            <a href="#" class="text-gray-400 hover:text-green-500"><i class="fab fa-whatsapp text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== Sección de Contacto ====== -->
+        <section id="contacto" class="py-16 sm:py-20 bg-cover bg-center" style="background-image: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), url('assets/img/map-image.png');">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-2">Contacto</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto">¿Listo para que tu evento sea inolvidable? ¡Hablemos!</p>
+                </div>
+                <div class="max-w-3xl mx-auto bg-gray-800/80 p-6 sm:p-8 rounded-xl shadow-2xl backdrop-blur-sm">
+                    <form id="contact-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" id="nombre" placeholder="Tu Nombre" class="w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="email" id="email" placeholder="Tu Correo (Opcional)" class="w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-6">
+                             <select id="evento" class="w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                                <option value="">Seleccione el tipo de evento</option>
                                 <option value="Baby Shower">Baby Shower</option>
                                 <option value="Boda">Boda</option>
                                 <option value="Cumpleaños">Cumpleaños</option>
+                                <option value="XV Años">XV Años</option>
                                 <option value="Otro">Otro</option>
-                            </select>
+                             </select>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-group-textarea mb-md-0">
-                            <!-- Message input-->
-                            <textarea class="form-control" id="message" placeholder="Su Mensaje *"></textarea>
+                        <div class="mb-6">
+                            <textarea id="mensaje" placeholder="Cuéntame más detalles sobre tu evento..." rows="5" class="w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
                         </div>
-                    </div>
-                </div>
-                <!-- Submit success message-->
-                <!---->
-                <!-- This is what your users will see when the form-->
-                <!-- has successfully submitted-->
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center text-white mb-3">
-                        <div class="fw-bolder">Mensaje enviado!</div>
-                    </div>
-                </div>
-                <!-- Submit error message-->
-                <!---->
-                <!-- This is what your users will see when there is-->
-                <!-- an error submitting the form-->
-                <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">
-                        Error al enviar mensaje!
-                    </div>
-                </div>
-                <!-- Submit Button-->
-                <div class="text-center">
-                    <button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="button"
-                        onclick="whatsap()">
-                        Enviar Mensaje
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
-    <!-- Footer-->
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">
-                    Copyright &copy; Dj Cristiano Arcangel 2022
-                </div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/DjArkangelMusicaCristiana"
-                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                                Enviar por WhatsApp
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </section>
+    </main>
+
+    <!-- ====== Footer ====== -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-4 sm:px-6 text-center text-gray-400">
+            <div class="flex justify-center space-x-6 mb-4">
+                 <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook-f text-xl"></i></a>
+                 <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram text-xl"></i></a>
+                 <a href="#" class="hover:text-green-500"><i class="fab fa-whatsapp text-xl"></i></a>
+            </div>
+            <p>&copy; <span id="year"></span> DJ Cristiano Arcangel. Todos los derechos reservados.</p>
+            <p class="text-sm text-gray-500 mt-2">Diseñado con <i class="fas fa-heart text-red-500"></i></p>
         </div>
     </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-</body>
 
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/18643465168" target="_blank" class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300 z-40" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Script principal de la página -->
+    <script src="js/scripts.js"></script>
+
+</body>
 </html>
