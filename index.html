@@ -4,42 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Metaetiquetas para SEO -->
-    <title>DJ Cristiano Arcangel | Eventos, Bodas, XV Años</title>
-    <meta name="description" content="DJ profesional para todo tipo de eventos sociales. Especialista en Bodas, XV Años, Baby Showers y más. La mejor música y ambiente para tu fiesta.">
-    <meta name="keywords" content="DJ, Cristiano Arcangel, DJ para eventos, música para fiestas, bodas, XV años, eventos sociales, DJ en Mexico">
+    <title>DJ Cristiano Arcangel | Celebraciones de Fe y Alegría</title>
+    <meta name="description" content="Servicio de DJ Cristiano profesional para bodas, XV años, y eventos de iglesia en México. Música que edifica, animación y audio profesional para una celebración de fe inolvidable.">
+
+    <meta name="keywords" content="DJ Cristiano, DJ para eventos cristianos, música cristiana para fiestas, DJ para bodas cristianas, DJ para XV años cristianos, eventos de iglesia, congresos cristianos, aniversarios, bautizos, DJ Arcangel, DJ en México para eventos cristianos, sonido e iluminación para iglesias, música para congresos, animador de eventos cristianos">
+    
     <meta name="author" content="DJ Cristiano Arcangel">
     <link rel="canonical" href="https://djcristianoarcangel.com">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="DJ Cristiano Arcangel | Animación para Eventos">
-    <meta property="og:description" content="La mejor música y ambiente para tus eventos. ¡Contrátame para hacer de tu fiesta algo inolvidable!">
-    <meta property="og:image" content="assets/img/DJ.jpg">
-    <meta property="og:url" content="https://djcristianoarcangel.com">
+    <meta property="og:title" content="DJ Cristiano Arcangel | ¡Música de Bendición para Tu Evento!">
+    <meta property="og:description" content="Transformamos tu boda, XV años o evento cristiano en un momento de gozo y comunión. ¡Música que inspira y une! Cotiza con nosotros.">
+    <meta property="og:image" content="https://djarcangel.pro/assets/img/DJ.jpg"> <meta property="og:url" content="https://djarcangel.pro/">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX"> <link rel="icon" type="image/png" href="assets/ico.png">
 
-    <!-- Favicon -->
+
     <link rel="icon" type="image/png" href="assets/ico.png">
 
-    <!-- Dependencias Externas -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Hoja de Estilos Personalizada -->
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body class="bg-gray-900 text-white antialiased">
 
-    <!-- ====== Header / Navegación ====== -->
     <header id="header" class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 w-full z-50 transition-all duration-300">
         <nav class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-            <!-- Logo con tamaño de texto responsivo -->
             <a href="#inicio" class="text-xl sm:text-2xl font-bold text-blue-500 tracking-wider">DJ Cristiano Arcangel</a>
             <div class="hidden md:flex space-x-8 items-center">
                 <a href="#servicios" class="hover:text-blue-400 transition-colors duration-300">Servicios</a>
-                <a href="#portafolio" class="hover:text-blue-400 transition-colors duration-300">Portafolio</a>
+                <a href="#portafolio" class="hover:text-blue-400 transition-colors duration-300">Galería</a>
                 <a href="#sobre-mi" class="hover:text-blue-400 transition-colors duration-300">Sobre Mí</a>
                 <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105">Contacto</a>
             </div>
@@ -49,98 +49,90 @@
         </nav>
         <div id="mobile-menu" class="hidden md:hidden">
             <a href="#servicios" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Servicios</a>
-            <a href="#portafolio" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Portafolio</a>
+            <a href="#portafolio" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Galería</a>
             <a href="#sobre-mi" class="block text-center py-3 px-4 text-sm hover:bg-gray-700">Sobre Mí</a>
             <a href="#contacto" class="block text-center py-3 px-4 text-sm bg-blue-600 hover:bg-blue-700">Contacto</a>
         </div>
     </header>
 
     <main>
-        <!-- ====== Sección de Inicio ====== -->
         <section id="inicio" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/img/DJ.jpg');">
             <div class="text-center px-4">
-                <!-- Títulos con tamaños de fuente responsivos para adaptarse a móviles y escritorio -->
-                <h1 class="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-widest mb-4">DJ Cristiano Arcangel</h1>
-                <p class="text-lg sm:text-xl md:text-2xl font-light text-gray-300 mb-8 max-w-3xl mx-auto">La música que transforma tu evento en una experiencia inolvidable.</p>
-                <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg transition-transform duration-300 ease-in-out transform hover:scale-105 shadow-lg">¡Cotiza tu evento!</a>
+                <h1 data-aos="fade-down" class="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-widest mb-4">DJ Cristiano Arcangel</h1>
+                <p data-aos="fade-up" data-aos-delay="200" class="text-lg sm:text-xl md:text-2xl font-light text-gray-300 mb-8 max-w-3xl mx-auto">Música que eleva el espíritu y llena tu evento de gozo.</p>
+                <a href="#contacto" data-aos="zoom-in" data-aos-delay="400" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 sm:px-8 rounded-full text-base sm:text-lg transition-transform duration-300 ease-in-out transform hover:scale-105 shadow-lg">Bendice tu Evento</a>
             </div>
         </section>
 
-        <!-- ====== Sección de Servicios ====== -->
         <section id="servicios" class="py-16 sm:py-20 bg-gray-800">
             <div class="container mx-auto px-4 sm:px-6 text-center">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-2">Mis Servicios</h2>
-                <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Soluciones de audio e iluminación para todo tipo de evento social.</p>
+                <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-bold mb-2">Nuestros Servicios</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="text-gray-400 mb-12 max-w-2xl mx-auto">Creamos atmósferas de alegría y comunión para cada ocasión especial.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="text-blue-500 mb-4"><i class="fas fa-ring text-5xl"></i></div>
+                    <div data-aos="fade-up" data-aos-delay="200" class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="text-blue-500 mb-4"><i class="fas fa-heart text-5xl"></i></div>
                         <h3 class="text-xl font-bold mb-2">Bodas</h3>
-                        <p class="text-gray-400">La banda sonora perfecta para el día más importante de tu vida.</p>
+                        <p class="text-gray-400">Melodías que celebran el pacto de amor bajo la bendición de Dios.</p>
                     </div>
-                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <div data-aos="fade-up" data-aos-delay="300" class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
                         <div class="text-pink-500 mb-4"><i class="fas fa-birthday-cake text-5xl"></i></div>
-                        <h3 class="text-xl font-bold mb-2">XV Años</h3>
-                        <p class="text-gray-400">La mejor música y ambiente para una celebración espectacular.</p>
+                        <h3 class="text-xl font-bold mb-2">XV Años y Cumpleaños</h3>
+                        <p class="text-gray-400">Celebramos cada año de vida y etapas especiales con gozo y gratitud.</p>
                     </div>
-                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="text-green-500 mb-4"><i class="fas fa-baby text-5xl"></i></div>
-                        <h3 class="text-xl font-bold mb-2">Baby Showers</h3>
-                        <p class="text-gray-400">Música ambiental y divertida para la bienvenida del bebé.</p>
+                    <div data-aos="fade-up" data-aos-delay="400" class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="text-green-500 mb-4"><i class="fas fa-dove text-5xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Bautizos y Presentaciones</h3>
+                        <p class="text-gray-400">Música de bendición para dar la bienvenida a los pequeños.</p>
                     </div>
-                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                        <div class="text-yellow-500 mb-4"><i class="fas fa-glass-cheers text-5xl"></i></div>
-                        <h3 class="text-xl font-bold mb-2">Eventos Sociales</h3>
-                        <p class="text-gray-400">Cumpleaños, aniversarios, y cualquier motivo para celebrar.</p>
+                    <div data-aos="fade-up" data-aos-delay="500" class="bg-gray-900 p-8 rounded-xl shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="text-yellow-500 mb-4"><i class="fas fa-church text-5xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">Eventos Congregacionales</h3>
+                        <p class="text-gray-400">Aniversarios, congresos y reuniones de fe con un ambiente de alegría.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ====== Sección de Portafolio (Slideshow) ====== -->
-        <section id="portafolio" class="py-16 sm:py-20">
+        <section id="portafolio" class="py-16 sm:py-20 overflow-hidden">
             <div class="container mx-auto px-4 sm:px-6 text-center">
-                <h2 class="text-3xl sm:text-4xl font-bold mb-2">Galería de Eventos</h2>
-                <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Momentos inolvidables capturados en acción.</p>
-                <div id="slideshow-container" class="max-w-4xl mx-auto relative">
-                    <a id="slideshow-prev" class="slideshow-nav-btn prev">&#10094;</a>
-                    <a id="slideshow-next" class="slideshow-nav-btn next">&#10095;</a>
-                </div>
-                <div id="thumbnail-container" class="flex justify-center flex-wrap gap-2 mt-4">
+                <h2 data-aos="fade-up" class="text-3xl sm:text-4xl font-bold mb-2">Galería de Bendiciones</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="text-gray-400 mb-12 max-w-2xl mx-auto">Testimonios visuales de celebraciones llenas de gozo.</p>
+                
+                <div data-aos="zoom-in" data-aos-delay="200" class="swiper-container max-w-6xl mx-auto relative">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" id="swiper-gallery-wrapper">
+                            </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
         </section>
 
-        <!-- ====== Sección Sobre Mí ====== -->
         <section id="sobre-mi" class="py-16 sm:py-20 bg-gray-800">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-                    <div class="md:w-1/3 flex-shrink-0">
+                    <div data-aos="fade-right" class="md:w-1/3 flex-shrink-0">
                         <img src="assets/img/djCristiano.png" alt="Retrato de DJ Cristiano Arcangel" class="rounded-full shadow-2xl w-64 h-64 sm:w-80 sm:h-80 object-cover mx-auto">
                     </div>
-                    <div class="md:w-2/3 text-center md:text-left">
-                        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Hola, soy DJ Cristiano Arcangel</h2>
-                        <p class="text-blue-400 text-lg sm:text-xl mb-4">DJ Profesional con más de 10 años de experiencia</p>
+                    <div data-aos="fade-left" data-aos-delay="200" class="md:w-2/3 text-center md:text-left">
+                        <h2 class="text-3xl sm:text-4xl font-bold mb-4">Un Ministerio al Servicio de tu Alegría</h2>
+                        <p class="text-blue-400 text-lg sm:text-xl mb-4">Más de 10 años llevando la música de Dios a cada celebración.</p>
                         <p class="text-gray-300 mb-6 leading-relaxed">
-                            Mi pasión es la música y mi misión es hacer que cada evento sea único. Me especializo en leer al público para crear una atmósfera vibrante, adaptándome a los gustos de cada cliente. Desde la elegancia de una boda hasta la euforia de una fiesta de XV años, mi compromiso es superar tus expectativas.
+                            Mi pasión es la música y mi llamado es servir a través de ella. Cada evento es una oportunidad única para crear una atmósfera de gozo y unidad. Comprendo la importancia de seleccionar música que edifique y alegre, adaptándome a cada momento de tu celebración. Mi compromiso es que tu evento refleje la alegría de la fe y supere tus expectativas.
                         </p>
-                        <div class="flex justify-center md:justify-start space-x-4">
-                            <a href="#" class="text-gray-400 hover:text-blue-500"><i class="fab fa-facebook-f text-2xl"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-pink-500"><i class="fab fa-instagram text-2xl"></i></a>
-                            <a href="#" class="text-gray-400 hover:text-green-500"><i class="fab fa-whatsapp text-2xl"></i></a>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ====== Sección de Contacto ====== -->
         <section id="contacto" class="py-16 sm:py-20 bg-cover bg-center" style="background-image: linear-gradient(rgba(17, 24, 39, 0.9), rgba(17, 24, 39, 0.9)), url('assets/img/map-image.png');">
             <div class="container mx-auto px-4 sm:px-6">
-                <div class="text-center mb-12">
+                <div data-aos="fade-up" class="text-center mb-12">
                     <h2 class="text-3xl sm:text-4xl font-bold mb-2">Contacto</h2>
-                    <p class="text-gray-400 max-w-2xl mx-auto">¿Listo para que tu evento sea inolvidable? ¡Hablemos!</p>
+                    <p class="text-gray-400 max-w-2xl mx-auto">¿Listo para que tu celebración sea inolvidable? ¡Conversemos!</p>
                 </div>
-                <div class="max-w-3xl mx-auto bg-gray-800/80 p-6 sm:p-8 rounded-xl shadow-2xl backdrop-blur-sm">
+                <div data-aos="zoom-in-up" data-aos-delay="200" class="max-w-3xl mx-auto bg-gray-800/80 p-6 sm:p-8 rounded-xl shadow-2xl backdrop-blur-sm">
                     <form id="contact-form">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <input type="text" id="nombre" placeholder="Tu Nombre" class="w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
@@ -148,16 +140,17 @@
                         </div>
                         <div class="mb-6">
                              <select id="evento" class="w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                                <option value="">Seleccione el tipo de evento</option>
-                                <option value="Baby Shower">Baby Shower</option>
+                                <option value="">Selecciona el tipo de celebración</option>
                                 <option value="Boda">Boda</option>
-                                <option value="Cumpleaños">Cumpleaños</option>
                                 <option value="XV Años">XV Años</option>
-                                <option value="Otro">Otro</option>
+                                <option value="Bautizo/Presentación">Bautizo / Presentación</option>
+                                <option value="Evento Congregacional">Evento Congregacional</option>
+                                <option value="Cumpleaños">Cumpleaños</option>
+                                <option value="Otro">Otra Celebración</option>
                              </select>
                         </div>
                         <div class="mb-6">
-                            <textarea id="mensaje" placeholder="Cuéntame más detalles sobre tu evento..." rows="5" class="w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            <textarea id="mensaje" placeholder="Cuéntame los detalles de tu celebración..." rows="5" class="w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
                         </div>
                         <div class="text-center">
                             <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform duration-300 ease-in-out transform hover:scale-105 shadow-lg">
@@ -170,25 +163,23 @@
         </section>
     </main>
 
-    <!-- ====== Footer ====== -->
     <footer class="bg-gray-900 py-8">
         <div class="container mx-auto px-4 sm:px-6 text-center text-gray-400">
             <div class="flex justify-center space-x-6 mb-4">
-                 <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook-f text-xl"></i></a>
-                 <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram text-xl"></i></a>
-                 <a href="#" class="hover:text-green-500"><i class="fab fa-whatsapp text-xl"></i></a>
+                 <a href="https://www.facebook.com/DjArkangelMusicaCristiana" class="hover:text-blue-500"><i class="fab fa-facebook-f text-xl"></i></a>
+                 <a href="#" class="hover:text-pink-500"><i class="fab fa-tiktok text-xl"></i></a>
             </div>
             <p>&copy; <span id="year"></span> DJ Cristiano Arcangel. Todos los derechos reservados.</p>
-            <p class="text-sm text-gray-500 mt-2">Diseñado con <i class="fas fa-heart text-red-500"></i></p>
+            <p class="text-sm text-gray-500 mt-2">Diseñado con <i class="fas fa-heart text-red-500"></i> para la gloria de Dios.</p>
         </div>
     </footer>
 
-    <!-- Botón flotante de WhatsApp -->
     <a href="https://wa.me/18643465168" target="_blank" class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300 z-40" aria-label="Contactar por WhatsApp">
         <i class="fab fa-whatsapp text-3xl"></i>
     </a>
 
-    <!-- Script principal de la página -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/scripts.js"></script>
 
 </body>

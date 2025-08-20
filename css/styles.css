@@ -20,88 +20,42 @@ html {
     font-weight: 600;
 }
 
-/* ====== ESTILOS PARA LA GALERÍA SLIDESHOW DEL PORTAFOLIO ====== */
-
-/* Contenedor principal del slideshow */
-/* Se le da una proporción de 16:9 para mantener un tamaño consistente. */
-#slideshow-container {
-    aspect-ratio: 16 / 9;
-    background-color: #111827; /* Color de fondo oscuro por si las imágenes tardan en cargar */
-    border-radius: 0.5rem;
-    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+/* ====== ESTILOS PARA EL CARRUSEL SWIPER ====== */
+.mySwiper .swiper-slide {
+    height: 350px; /* Altura fija para los slides, puedes ajustarla */
+    border-radius: 0.75rem; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que la imagen no se salga de los bordes */
 }
 
-/* Contenedor de cada slide */
-.slide {
-    display: none; /* Oculto por defecto */
+.mySwiper .swiper-slide img {
+    display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover; /* La imagen cubre todo el espacio sin deformarse */
+    transition: transform 0.4s ease;
 }
 
-/* Imagen dentro del slide */
-/* La imagen ahora ocupa el 100% del contenedor del slide. */
-/* 'object-fit: cover' es la clave: la imagen cubre todo el espacio sin deformarse, */
-/* recortando los bordes si es necesario. */
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    vertical-align: middle;
+/* Efecto de zoom suave al pasar el cursor */
+.mySwiper .swiper-slide:hover img {
+    transform: scale(1.05);
 }
 
-/* Animación de desvanecimiento (fade) */
-.fade {
-    animation-name: fade;
-    animation-duration: 0.8s;
+/* Personaliza el color de los botones de navegación de Swiper */
+/* Usamos variables CSS de Swiper para mayor compatibilidad */
+:root {
+  --swiper-navigation-color: #ffffff;
+  --swiper-navigation-size: 30px; /* Un poco más pequeño y sutil */
 }
 
-@keyframes fade {
-    from { opacity: 0.4 }
-    to { opacity: 1 }
-}
-
-/* Botones de navegación (anterior/siguiente) */
-.slideshow-nav-btn {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -30px;
-    color: white;
-    font-weight: bold;
-    font-size: 24px;
-    transition: 0.3s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+/* Estilo para los botones de navegación */
+.swiper-button-next, .swiper-button-prev {
     background-color: rgba(0,0,0,0.3);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
 }
 
-.slideshow-nav-btn.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.slideshow-nav-btn.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.slideshow-nav-btn:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-/* Estilos para las miniaturas (thumbnails) */
-.thumbnail {
-    cursor: pointer;
-    height: 80px;
-    width: auto;
-    opacity: 0.6;
-    transition: opacity 0.2s ease-in-out;
-    border-radius: 0.25rem;
-}
-
-.thumbnail.active,
-.thumbnail:hover {
-    opacity: 1;
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(0,0,0,0.6);
 }

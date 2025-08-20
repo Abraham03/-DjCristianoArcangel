@@ -74,82 +74,54 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- LÓGICA PARA LA GALERÍA SLIDESHOW DEL PORTAFOLIO ---
+    // --- LÓGICA PARA EL CARRUSEL SWIPER ---
 
-    // Define aquí la lista de imágenes para la galería.
-    // ¡Solo necesitas modificar este array para añadir o quitar fotos!
+    // ¡Modifica este array para añadir o quitar fotos!
     const galleryImages = [
-        { src: 'assets/img/about/1.jpg', alt: 'Evento social animado' },
-        { src: 'assets/img/about/2.jpg', alt: 'Pista de baile llena' },
+        { src: 'assets/img/about/8.jpg', alt: 'Evento social animado' },
+        { src: 'assets/img/about/5.jpg', alt: 'Pista de baile llena' },
         { src: 'assets/img/about/3.jpg', alt: 'Luces y ambiente de fiesta' },
         { src: 'assets/img/about/4.jpg', alt: 'Invitados disfrutando' },
-        { src: 'assets/img/about/5.jpg', alt: 'Equipo de sonido profesional' },
+        { src: 'assets/img/about/9.jpg', alt: 'Equipo de sonido profesional' },
         { src: 'assets/img/about/6.jpg', alt: 'Decoración del evento' },
-        { src: 'assets/img/about/7.jpg', alt: 'Evento social animado' },
-        { src: 'assets/img/about/8.jpg', alt: 'Pista de baile llena' },
-        { src: 'assets/img/about/9.jpg', alt: 'Luces y ambiente de fiesta' },
-        { src: 'assets/img/about/10.jpg', alt: 'Invitados disfrutando' },
-        { src: 'assets/img/about/11.jpg', alt: 'Equipo de sonido profesional' },
-        { src: 'assets/img/about/12.jpg', alt: 'Decoración del evento' }  ,  
-        { src: 'assets/img/about/13.jpg', alt: 'Equipo de sonido profesional' },
-        { src: 'assets/img/about/14.jpg', alt: 'Decoración del evento' }        
+        { src: 'assets/img/about/1.jpg', alt: 'Evento social animado' },
+        { src: 'assets/img/about/12.jpg', alt: 'Decoración del evento' }
     ];
 
-    const slideshowContainer = document.getElementById('slideshow-container');
-    const thumbnailContainer = document.getElementById('thumbnail-container');
-    const prevBtn = document.getElementById('slideshow-prev');
-    const nextBtn = document.getElementById('slideshow-next');
+    const swiperWrapper = document.getElementById('swiper-gallery-wrapper');
 
-    if (slideshowContainer && thumbnailContainer && galleryImages.length > 0) {
-        // Generar dinámicamente los slides y las miniaturas
-        galleryImages.forEach((image, index) => {
-            // Crear el slide
-            const slideDiv = document.createElement('div');
-            slideDiv.className = 'slide fade';
-            slideDiv.innerHTML = `<img src="${image.src}" alt="${image.alt}">`;
-            slideshowContainer.insertBefore(slideDiv, prevBtn); // Insertar antes del botón 'prev'
-
-            // Crear la miniatura
-            const thumbImg = document.createElement('img');
-            thumbImg.className = 'thumbnail';
-            thumbImg.src = image.src;
-            thumbImg.alt = `Thumbnail ${index + 1}`;
-            thumbImg.addEventListener('click', () => showSlide(index));
-            thumbnailContainer.appendChild(thumbImg);
+    if (swiperWrapper) {
+        // Generar los slides dinámicamente
+        galleryImages.forEach(image => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide';
+            slide.innerHTML = `<img src="${image.src}" alt="${image.alt}">`;
+            swiperWrapper.appendChild(slide);
         });
 
-        let currentSlideIndex = 0;
-        const slides = document.querySelectorAll('.slide');
-        const thumbnails = document.querySelectorAll('.thumbnail');
-
-        // Función para mostrar un slide específico
-        function showSlide(index) {
-            // Validar límites del índice
-            if (index >= slides.length) { currentSlideIndex = 0; }
-            else if (index < 0) { currentSlideIndex = slides.length - 1; }
-            else { currentSlideIndex = index; }
-
-            // Ocultar todos los slides
-            slides.forEach(slide => slide.style.display = 'none');
-            
-            // Quitar la clase 'active' de todas las miniaturas
-            thumbnails.forEach(thumb => thumb.classList.remove('active'));
-
-            // Mostrar el slide actual y marcar su miniatura como activa
-            slides[currentSlideIndex].style.display = 'block';
-            thumbnails[currentSlideIndex].classList.add('active');
-        }
-
-        // Función para cambiar de slide
-        function changeSlide(direction) {
-            showSlide(currentSlideIndex + direction);
-        }
-
-        // Event listeners para los botones de navegación
-        if (prevBtn) prevBtn.addEventListener('click', () => changeSlide(-1));
-        if (nextBtn) nextBtn.addEventListener('click', () => changeSlide(1));
-
-        // Mostrar el primer slide al cargar la página
-        showSlide(currentSlideIndex);
+        // Inicializar Swiper
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: { slidesPerView: 1.5, spaceBetween: 20 },
+                768: { slidesPerView: 2.5, spaceBetween: 30 },
+                1024: { slidesPerView: 3, spaceBetween: 30 },
+            },
+        });
     }
+
+    // --- INICIALIZACIÓN DE LA LIBRERÍA DE ANIMACIONES (AOS) ---
+    AOS.init({
+        duration: 800, // Duración de la animación en milisegundos
+        once: true, // La animación solo ocurre una vez
+        offset: 50, // Activa la animación un poco antes de que el elemento sea visible
+    });
 });
